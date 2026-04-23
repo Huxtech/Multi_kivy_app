@@ -1,13 +1,12 @@
 import os
 from jnius import autoclass
-from android import mActivity # type: ignore
+from android import mActivity  # type: ignore
 from android.runnable import run_on_ui_thread  # type: ignore
 
 ClientActivity = autoclass("org.huxtech.client.ClientActivity")
 Intent = autoclass("android.content.Intent")
 Uri = autoclass("android.net.Uri")
 
-activity = mActivity
 AppStorageDir = os.path.join(mActivity.getFilesDir().getAbsolutePath(), "app")
 
 
