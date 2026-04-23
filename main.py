@@ -18,7 +18,7 @@ Screen:
         width: dp(128)
         pos_hint: {"center_x": 0.5, "center_y": 0.5}
         on_press:
-
+            app.launch()
 """
 
 
